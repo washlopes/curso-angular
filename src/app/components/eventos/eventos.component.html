@@ -1,0 +1,5 @@
+<div class="diretivaif">
+  <p *ngIf="show" [ngStyle]="{color: color}" (mouseover)="trocaCor()" (mouseout)="trocaCorNovamente()">Exibindo
+    mensagem!</p>
+  <button (click)="showMessage()">Clique em mim!</button>
+</div>
