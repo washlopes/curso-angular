@@ -11,7 +11,9 @@ export class DiretivasComponent implements OnInit {
   font: string = 'Arial';
   color: string = 'red';
 
-  classes = ['green-title', 'small-title']
+  classes = ['green-title', 'small-title'];
+
+  underline = 'underline-title';
 
   constructor() { }
 
