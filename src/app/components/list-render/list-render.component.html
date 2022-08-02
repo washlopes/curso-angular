@@ -1,8 +1,17 @@
-<div class="diretivasif">
+<div class="diretivaif">
   <h2>Animais:</h2>
   <ul>
     <li *ngFor="let animal of animais">
       nome: {{animal.nome}} - {{animal.tipo}}
+      <button (click)="showAge(animal)">Mostrar idade</button>
+      <button (click)="removeAnimal(animal)">Remover</button>"
     </li>
   </ul>
+  <h3>{{ detalhesDoAnimal }}</h3>
+  <table border="1">
+    <tr *ngFor="let animal of animais">
+      <td>{{animal.nome}}</td>
+      <td>{{animal.tipo}}</td>
+    </tr>
+  </table>
 </div>

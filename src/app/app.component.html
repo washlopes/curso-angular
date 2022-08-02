@@ -1,13 +1,6 @@
 <h1>Hello Angular!</h1>
-<br />
-<h2>criando primeiro projeto</h2>
-<div>
-  <a href="#">Indo para lugar nenhum</a>
-</div>
-<app-primeiro-component></app-primeiro-component>
-<app-parent-data [name]="userName" [userData]="userData"></app-parent-data>
-<app-diretivas></app-diretivas>
-<app-if-render></app-if-render>
-<app-eventos></app-eventos>
-<app-emitter></app-emitter>
-<app-list-render></app-list-render>
+<nav>
+  <a routerLink="/">Home</a><br />
+  <a routerLink="/list">Lista</a>
+</nav>
+<router-outlet></router-outlet>
